@@ -66,8 +66,8 @@
     <label for="whattheydid">What did they do to you?</label>
     <input type="text" id="whattheydid" name="whattheydid" size="32" value="<?php if (!empty($what_they_did)) echo $what_they_did; ?>" /><br />
     <label for="fangspotted">Have you seen my dog Fang?</label>
-    Yes <input id="fangspotted" name="fangspotted" type="radio" value="yes" <?php echo ($fang_spotted == 'yes' ? 'checked="checked"' : ''); ?> />
-    No <input id="fangspotted" name="fangspotted" type="radio" value="no"  <?php echo ($fang_spotted == 'no' ? 'checked="checked"' : ''); ?> /><br />
+    Yes <input id="fangspotted" name="fangspotted" type="radio" value="yes" <?php if (isset($fang_spotted)) { echo ($fang_spotted == 'yes' ? 'checked="checked"' : ''); } ?> />
+    No <input id="fangspotted" name="fangspotted" type="radio" value="no"  <?php if (isset($fang_spotted)) { echo ($fang_spotted == 'no' ? 'checked="checked"' : ''); } ?> /><br />
     <img src="fang.jpg" width="100" height="175" alt="My abducted dog Fang." /><br />
     <label for="other">Anything else you want to add?</label>
     <textarea id="other" name="other"><?php if (!empty($other)) echo $other; ?></textarea><br />
