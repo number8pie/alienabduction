@@ -52,6 +52,8 @@
       echo '<td><strong>Fang spotted:</strong><br /> ' . $row['fang_spotted'] . '</td></tr>';
     }
     echo '</table>';
+
+    echo '<p><a href="newsfeed.php"><img style="vertical-align:top; border:none" src="rssicon.png" alt="Syndicate alien abductions"> Click to syndicate the abduction news feed.</a></p>';
   }
 
   mysqli_close($dbc);

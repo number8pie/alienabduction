@@ -1,3 +1,3 @@
 #NEXT COMMIT MESSAGE:
 
-Created newsfeed.php and populated with code from book.
+Added RSS news feed link to index.php.
