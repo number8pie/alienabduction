@@ -28,7 +28,7 @@
   if (mysqli_num_rows($data) == 1) {
     // Show the details for this single abduction
     $row = mysqli_fetch_array($data);
-    echo '<p><strong>Name: </strong>' . $row['first_name'] . ' ' . $row[last_name] . '<br />';
+    echo '<p><strong>Name: </strong>' . $row['first_name'] . ' ' . $row['last_name'] . '<br />';
     echo '<strong>Date:</strong> ' . $row['when_it_happened'] . '<br />';
     echo '<strong>Email:</strong> ' . $row['email'] . '<br />';
     echo '<strong>Abducted for:</strong> ' . $row['how_long'] . '<br />';

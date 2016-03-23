@@ -1,5 +1,3 @@
 #NEXT COMMIT MESSAGE:
 
-Original code was throwing up some notices. Fixed these.
-Deleted newsfeed.php, so I could follow the book and create the file.
-Dleted link at the bottom of index.php, so I follow the book.
+Created newsfeed.php and populated with code from book.
